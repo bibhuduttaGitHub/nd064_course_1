@@ -20,6 +20,9 @@ spec:
       labels:
         app: python-helloworld
     spec:
+      tolerations:
+      - key: ""
+        operator: "Exists"
       containers:
       - image: bibhuduttagithub/python-helloworld:latest 
         imagePullPolicy: IfNotPresent
